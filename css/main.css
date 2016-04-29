@@ -55,7 +55,7 @@ header {
   margin-right: 0;
 }
 
-.nav, li:hover {
+.nav li:hover {
   background-color: #aaa;
 }
 
@@ -114,7 +114,7 @@ display: none;
 
 }
 
-.nav ul:hover{
+.nav ul:hover {
   background: #777;
 }
 
@@ -140,8 +140,8 @@ display: none;
 }
 
 h2 {
- font-family: "Ubuntu", sans-serif;
- font-size: 1.5rem;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.5rem;
 }
 
 .img-flex {
@@ -152,43 +152,32 @@ h2 {
 }
 
 /*----------------------------*/
-
-.cards ul {
-	margin-bottom: 1rem;
-  list-style-type: none;
-}
-
 .card {
   align-items: center;
   list-style-type: none;
   text-align: center;
-  text-decoration: none;
   margin-bottom: .25rem;
+  padding: 0;
+  background-color: #333;
 }
 
-.cards {
-  display: block;
-  max-width: 25em;
-	margin-bottom: 2rem;
-  width: calc(100% - .6em);
-  border-radius: 80px;
-	display: block;
-	text-align: left;
-
-}
-
-.card-imgs img {
-	width: 12px;
-	margin-left: auto;
-	margin-right: auto;
+.card p {
   display: none;
+}
 
+.card-img {
+  width: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 1em;
+  display: none;
 }
 
 .card-body p {
-  font size: 1.5rem;
+  font size: 1.5;
   position: relative;
   max-height: 500px;
+  display: none;
 }
 
 .card-body h2 {
@@ -200,6 +189,9 @@ h2 {
   background-color: #333;
 }
 
+.first {
+  margin: auto;
+}
 /*------------------------*/
 
 .bgrnd {
@@ -209,7 +201,6 @@ h2 {
 .about h2 {
   width: 100%;
   text-align: left;
-  padding-left: 20%;
   background-color: #888;
   padding: .5em;
   top: 10px;
@@ -230,9 +221,6 @@ e.about-body {
   padding-bottom: 3rem;
   position: inherit;
   color: #fff;
-}
-
-.about h2: {
 }
 
 .about {
@@ -256,19 +244,18 @@ section {
 }
 
 h3 {
-  padding-left: 1em:
 }
 
 .menu {
-  padding: 1rem;
-  text-align: center;
+  padding: 1rem 3rem 1rem 6rem;
+  text-align: left;
 }
 
-.offer {
-  max-width: 80%;
+ {
+
 }
 
-.specials ul, h3 {
+.specials {
   text-align: center;
 }
 
@@ -276,9 +263,6 @@ h3 {
   color: #fff;
   margin: 1rem;
   padding-bottom: 2rem;
-}
-
-.hours {
 }
 
 footer {
@@ -296,25 +280,59 @@ footer a {
 
 @media only screen and (min-width: 25em) {
 
+.nav {
+  text-align: right;
+}
+
+   .nav li:hover {
+     background-color: #222;
+   }
+
+   .nav a,
+   .nav a:hover {
+     background-color: #555;
+     color: #000;
+     padding: 0;
+     margin: 0;
+   }
+
+  .nav {
+    display: block;
+    text-align: right;
+  }
+
+  .nav-check, .nav-open {
+    display: none;
+  }
+
+  .nav li {
+    display: inline-block;
+    width: 30%;
+
+  }
+
+  .nav ul {
+    position: static;
+  }
+
+.nav-lable {
+  display: none;
+}
+
+  .nav a {
+    top: 0;
+    padding: 0;
+  }
+
   .card header {
     overflow: hidden;
   }
-
-  .card {
-		display: flex;
-		text-align: left;
-	}
-
-	.cards {
-		padding-left: 1em;
-		display: block;
-	}
 
   .card-img {
     display: inline;
     max-height: 100px;
     margin: 0 auto;
-		display: inline-block;
+    width: 33.3%;
   }
 
   .card-body {
@@ -352,6 +370,12 @@ footer a {
   right: 1rem;
 }
 
+.card a{
+  margin: auto;
+  padding-left: 0;
+}
+
+
 }
 
 /*------------------------*/
@@ -362,6 +386,10 @@ footer a {
     font-size: 110%;
     line-height: 1.4;
    }
+
+  .menu {
+    text-align: left;
+  }
 
   .card a {
     padding: 0;
@@ -376,7 +404,6 @@ footer a {
   }
 
   .cards {
-    display: flex;
     text-align: left;
   }
 
@@ -392,9 +419,18 @@ footer a {
  }
 
   .menu p {
-    max-width: 80%;
-    padding-left: 10%;
+    max-width: 30%;
  }
+
+.offer {
+  float: left;
+  display: inline-block;
+ }
+
+.dish {
+  max-width: 33%;
+}
+
 }
 
 @media only screen and (min-width: 60em) {
@@ -413,10 +449,6 @@ footer a {
     .card-body {
       max-width: 5em;
       margin-right: 5em;
-    }
-
-    .cards {
-      max-width: 30%
     }
 
   }
