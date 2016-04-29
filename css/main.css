@@ -155,14 +155,15 @@ h2 {
 .card {
   align-items: center;
   list-style-type: none;
-  text-align: center;
-  margin-bottom: .25rem;
-  padding: 0;
+  text-align: left;
+  padding: .25rem;
   background-color: #333;
 }
 
 .card p {
-  display: none;
+  font size: 1.5rem;
+  position: relative;
+  max-height: 500px;
 }
 
 .card-img {
@@ -174,10 +175,12 @@ h2 {
 }
 
 .card-body p {
-  font size: 1.5;
-  position: relative;
-  max-height: 500px;
-  display: none;
+  display: block;
+font-style: normal;
+font-size: 1.5rem;
+font-weight: normal;
+margin-top: auto;
+margin-bottom: auto;
 }
 
 .card-body h2 {
@@ -240,19 +243,15 @@ ul {
 }
 
 section {
-  padding-top: 5em;
-}
-
-h3 {
+  padding-top: 3em;
 }
 
 .menu {
-  padding: 1rem 3rem 1rem 6rem;
   text-align: left;
 }
 
- {
-
+.offer {
+  text-align: center;
 }
 
 .specials {
@@ -292,13 +291,15 @@ footer a {
    .nav a:hover {
      background-color: #555;
      color: #000;
-     padding: 0;
+     padding: 0 2rem 0 2rem;
      margin: 0;
    }
 
   .nav {
     display: block;
-    text-align: right;
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 
   .nav-check, .nav-open {
@@ -307,12 +308,12 @@ footer a {
 
   .nav li {
     display: inline-block;
-    width: 30%;
 
   }
 
   .nav ul {
     position: static;
+    margin: .5em;
   }
 
 .nav-lable {
@@ -321,11 +322,14 @@ footer a {
 
   .nav a {
     top: 0;
-    padding: 0;
   }
 
   .card header {
     overflow: hidden;
+  }
+
+  .card ul {
+    padding: 0;
   }
 
   .card-img {
@@ -393,6 +397,9 @@ footer a {
 
   .card a {
     padding: 0;
+    display: block;
+    width: 25%;
+    display: flex;
   }
 
   .bgrnd p {
@@ -404,7 +411,8 @@ footer a {
   }
 
   .cards {
-    text-align: left;
+    text-align: left
+    display: inline-block;
   }
 
   .content {
@@ -419,12 +427,7 @@ footer a {
  }
 
   .menu p {
-    max-width: 30%;
- }
-
-.offer {
-  float: left;
-  display: inline-block;
+    max-width: 50%;
  }
 
 .dish {
@@ -449,9 +452,8 @@ footer a {
     .card-body {
       max-width: 5em;
       margin-right: 5em;
+      padding: 0;
     }
-
-  }
 
   h1 {
     float: left;
@@ -465,6 +467,10 @@ footer a {
     padding: 0;
     padding-top: 1rem;
     text-align: center;
+  }
+
+    .cards {
+    max-width: 30%
   }
 
 }
