@@ -42,7 +42,7 @@ header h1 {
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .nav-open,
@@ -99,7 +99,6 @@ a {
   text-decoration: none;
 }
 
-/* Select nav obnly when checkbox is checked */
 .nav-check:checked ~ .nav {
   background-color: #ccc;
 }
@@ -162,7 +161,6 @@ h2 {
   margin: 0;
 }
 
-/* ---------------------------- */
 .card {
   background-color: #333;
 }
@@ -219,13 +217,12 @@ h2 {
   width: 100%;
 }
 
-
 e.about-body {
   bottom: 1.5rem;
 }
 
 .about img {
- position: inherit;
+  position: inherit;
 }
 
 .about-body {
@@ -307,7 +304,7 @@ footer a {
 }
 
 .links {
-  margin: 1em
+  margin: 1em;
 }
 
 .link-img {
@@ -315,11 +312,6 @@ footer a {
 }
 
 @media only screen and (min-width: 25em) {
-
-  .nav {
-    position: absolute;
-  }
-
 
   .nav-check {
     padding: 0;
@@ -339,13 +331,13 @@ footer a {
     right: 1rem;
   }
 
-.nav {
-  text-align: right;
-}
+  .nav {
+    text-align: right;
+  }
 
-   .nav li:hover {
-     background-color: #222;
-   }
+  .nav li:hover {
+    background-color: #222;
+  }
 
   .nav a {
     color: #666;
@@ -353,12 +345,12 @@ footer a {
     margin: 0;
   }
 
-   .nav a:hover {
-     background-color: red;
-     color: #666;
-     padding: 0 2rem 0 2rem;
-     margin: 0;
-   }
+  .nav a:hover {
+    background-color: red;
+    color: #666;
+    padding: 0 2rem 0 2rem;
+    margin: 0;
+  }
 
   .nav {
     display: block;
@@ -381,9 +373,9 @@ footer a {
     margin: .5em;
   }
 
-.nav-lable {
-  display: none;
-}
+  .nav-lable {
+    display: none;
+  }
 
   .nav a {
     top: 0;
@@ -395,7 +387,7 @@ footer a {
     margin: 1em;
   }
 
-  .card a{
+  .card a {
     margin: 3em;
     float: inherit;
     margin-bottom: 3em;
@@ -421,7 +413,7 @@ footer a {
   .card-body p {
     display: block;
     font-size: 1em;
-    height: 150px
+    height: 150px;
   }
 
   .card-imgs img {
@@ -457,19 +449,17 @@ footer a {
     right: 1rem;
   }
 
-.card a {
-  margin: auto;
-  float: inherit;
-}
+  .card a {
+    margin: auto;
+    float: inherit;
+  }
 
-.link-img {
-  width: 20%;
-  margin: 2em;
-}
+  .link-img {
+    width: 20%;
+    margin: 2em;
+  }
 
 }
-
-/* ------------------------ */
 
 @media only screen and (min-width: 38em) {
 
@@ -478,9 +468,9 @@ footer a {
     line-height: 1.4;
   }
 
-    .dish {
+  .dish {
     margin: 0 auto;
-		display: inline-block;
+    display: inline-block;
   }
 
   .content-menu {
@@ -491,16 +481,15 @@ footer a {
     text-align: left;
   }
 
-.offer {
-  display: inline;
-}
+  .offer {
+    display: inline;
+  }
 
-.content-menu p{
-
-  display: block;
-  max-width: 25%;
-  display: flex;
-}
+  .content-menu p {
+    display: block;
+    max-width: 25%;
+    display: flex;
+  }
 
   .card a {
     padding: 0;
@@ -532,7 +521,7 @@ footer a {
   }
 
   .content {
-    bottom: 0em;
+    bottom: 0;
     right: 0;
     width: 13rem;
     color: #fff;
@@ -542,9 +531,9 @@ footer a {
     border-width: 0;
   }
 
-.menu {
-  padding: 3em;
-}
+  .menu {
+    padding: 3em;
+  }
 
   .dish {
     max-width: 33%;
@@ -552,9 +541,6 @@ footer a {
 
   .list {
     padding: 0 10em;
-  }
-
-  .links {
   }
 
 }
@@ -581,11 +567,11 @@ footer a {
     margin: auto;
   }
 
-    .card-body {
-      max-width: 5em;
-      margin-right: 5em;
-      padding: 0;
-    }
+  .card-body {
+    max-width: 5em;
+    margin-right: 5em;
+    padding: 0;
+  }
 
   h1 {
     float: left;
@@ -602,16 +588,16 @@ footer a {
   }
 
   .cards {
-    max-width: 30%
+    max-width: 30%;
   }
 
 }
 
 @media only screen and (min-width: 90em) {
 
- html {
-   font-size: 130%;
- }
+  html {
+    font-size: 130%;
+  }
 
   article {
     margin-left: 10%;
@@ -622,7 +608,6 @@ footer a {
   }
 
   .cards {
-    max-width: 30%
+    max-width: 30%;
   }
-
 }
