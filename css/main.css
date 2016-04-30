@@ -405,7 +405,6 @@ footer a {
   }
 
   .card-body {
-    display: inline-block;
     width: auto;
     padding: 1em 0 1em 0;
   }
@@ -454,6 +453,19 @@ footer a {
     float: inherit;
   }
 
+  .offer {
+    text-align: left;
+  }
+
+  .content-menu {
+    float: left;
+    margin: 0;
+  }
+
+  .menu img {
+    display: inline-block;
+  }
+
   .link-img {
     width: 20%;
     margin: 2em;
@@ -474,11 +486,7 @@ footer a {
   }
 
   .content-menu {
-    display: inline-block;
-    margin-left: 1em;
-    width: calc(100% - 64px - .8em);
-    display: flex;
-    text-align: left;
+    float: left;
   }
 
   .offer {
